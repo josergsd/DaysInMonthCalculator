@@ -33,5 +33,5 @@ This formula uses the modulo operator (%), which returns the remainder of a divi
 The '**month - 1**' part of the formula is used to adjust for the fact that the "**Knuckle Trick**" starts counting with the index finger, which corresponds to January, but the code starts counting with 0 for January.
 
 - The '**((month - 1) % 7)**' calculates the remainder of the division of '**month-1**' by 7, this function will return a number between 0 and 6, which corresponds to the position of the knuckle of the finger when counting the months using the "**Knuckle Trick**".
-- Then the value obtained before is divided by 2 using the modulo operator (%), this operation returns a remainder of 0 or 1
+- Then the value obtained before is divided by 2 using the modulo operator (%), this operation returns a remainder of 0 or 1.
 - Finally, the code subtracts the result obtained from the value 31, which represents the maximum number of days in a month. This calculation gives us the number of days in the specified month.
