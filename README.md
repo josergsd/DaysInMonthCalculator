@@ -22,7 +22,7 @@ if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
 
 The '**if**' statement checks if '**year % 4 == 0 && year % 100 != 0**' is true, or if '**year % 400 == 0**' is true, if any of these conditions are met, then the method returns 29, as February has 29 days in a leap year. If the year is not a leap year, then the method returns 28, as February has 28 days in a non-leap year.
 
-If the '**month**' parameter is not equal to 2, the method proceeds to use the mathematical formula to determine the number of days in the month based on the "**Knuckle Trick**" or "**Mnemonic Fingers Method**".
+If the '**month**' parameter is not equal to 2, the method proceeds to use the mathematical formula to determine the number of days in the month based on the "**Knuckle Trick**".
 
 ```java
 return 31 - (((month - 1) % 7) % 2);
