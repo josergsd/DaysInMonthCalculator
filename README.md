@@ -6,7 +6,21 @@ This Java code is a simple program that determines how many days are in a specif
 
 The method '**getDaysInMonth()**' takes in two parameters, an '**int**' called '**year**' and an '**int**' called '**month**'.
 
-The first thing the method does is check if the value of the '**month**' parameter is equal to 2. If it is, then it checks if the value of the '**year**' parameter is a leap year. A leap year is a year that is evenly divisible by 4, except for end-of-century years which must be divisible by 400. The '**if**' statement checks if '**year % 4 == 0 && year % 100 != 0**' is true, or if '**year % 400 == 0**' is true, if any of these conditions are met, then the method returns 29, as February has 29 days in a leap year. If the year is not a leap year, then the method returns 28, as February has 28 days in a non-leap year.
+```java
+private static int getDaysInMonth(int year, int month) {}
+```
+
+The first thing the method does is check if the value of the '**month**' parameter is equal to 2. If it is, then it checks if the value of the '**year**' parameter is a leap year. A leap year is a year that is evenly divisible by 4, except for end-of-century years which must be divisible by 400. 
+
+```java
+if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+    return 29;
+} else {
+    return 28;
+}
+```
+
+The '**if**' statement checks if '**year % 4 == 0 && year % 100 != 0**' is true, or if '**year % 400 == 0**' is true, if any of these conditions are met, then the method returns 29, as February has 29 days in a leap year. If the year is not a leap year, then the method returns 28, as February has 28 days in a non-leap year.
 
 If the '**month**' parameter is not equal to 2, the method proceeds to use the mathematical formula to determine the number of days in the month based on the "**Knuckle Trick**" or "**Mnemonic Fingers Method**".
 
